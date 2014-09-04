@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html style=''>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link href='css/raleway.css' rel='stylesheet' type='text/css'>
+		<script src='js/main.js'></script>
+		<script src='js/lib/jquery.js'></script>
+		<script src='js/lib/bootstrap.min.js'></script>
+
+		<style>
+		    @font-face{
+		    	font-family:'Glyphicons Halflings';
+		    	src:url(fonts/glyphicons-halflings-regular.eot);
+		    	src:url(fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'),
+		    	url(fonts/glyphicons-halflings-regular.woff) format('woff'),
+		    	url(fonts/glyphicons-halflings-regular.ttf) format('truetype'),
+		    	url(fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')}
+
+			body {
+				width: 400px;
+				height: 400px;
+				padding: 20px;
+				
+			}
+	
+			* {
+				font-family: 'Raleway', sans-serif;
+				text-transform: uppercase;
+				transition: all 0.5s ease;
+				-webkit-transition: all 1s ease;
+			}
+
+			.gui {
+				opacity: 0;
+			}
+
+			#message{
+				margin-bottom:20px;
+			}
+		</style>
+	</head>
+
+
+	<body>
+		<div class="row">
+			<div id='message'></div>
+			<button id="scan-button" type="button" class="btn btn-default gui">
+				<span class="glyphicon glyphicon-search"></span> Scan Page
+			</button>
+			<button type="button" class="btn btn-success gui">
+				<span class="glyphicon glyphicon-user"></span> Login
+			</button>
+		</div>
+
+	</body>
+</html>
